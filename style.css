@@ -287,8 +287,8 @@ html,body{
     padding-bottom: 1vh;
     height: 15vh;
     width: 100%;
-    
-    background-color: #3a2c298b;
+    /* color: black; */
+    background-color: #3a2c2932;
     /* border-radius: 35%; */
     /* border-top: 2px solid black; */
     /* border-bottom:2px solid rgba(255, 106, 106, 0.581); */
@@ -303,6 +303,8 @@ html,body{
     /* height: 30%; */
     /* width: 100%; */
     cursor: pointer;
+    /* opacity: 1; */
+    background-color: #3a2c298b;
 }
 
 /* @keyframes zoom {
@@ -319,7 +321,7 @@ html,body{
 
 
 #info img{
-    background-color: aqua;
+    /* background-color: aqua; */
     margin-top: 1vh;
     opacity: 0.15;
     height: 100%;
@@ -329,7 +331,7 @@ html,body{
     object-fit: fill;
     border-radius: 50%;
     border: 1.5px solid white;
-    transition: all ease 0.8s;
+    transition: all ease 0.5s;
 }
 
 #info img:hover{
@@ -342,38 +344,102 @@ html,body{
     /* animation: zoom 2s linear; */
     /* color: #ffdada(255, 106, 106); */
     margin-right: 130px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 1.7vw;
     font-weight: 500;
     padding-left: 5vw;
 }
 
 #info h6:hover{
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 2.5vw;
     font-weight: 900;
     /* scale: 110%; */
-
 }
 
 #info h1{
     /* color: #ffdada(255, 106, 106); */
     margin-right: 130px;
     color: rgb(255, 238, 238);
-    font-size: 1.7vw;
-    font-weight: 500;
+    font-size: 1.9vw;
+    font-weight:900;
     animation: blink 1s linear infinite;
 }
 
 @keyframes blink {
     from{
-        color: rgb(166, 255, 0);
+        color: rgb(0, 255, 26);
     }   
     to{
-        color: rgb(255, 255, 0);
+        color: rgb(0, 187, 255);
     } 
 }
 
 #child{
     object-fit:contain;
+}
+
+
+
+
+#nav h1::before{
+    content: "for your pookie";
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 11%;
+    left: 19.2%;
+}
+#nav h1::after{
+    content: "©️";
+    font-size: 25px;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 3.9%;
+    left: 33.7%;
+}
+
+#strip{
+    margin-top: 30px;
+    background-color: rgba(255, 235, 205, 0.5);
+    height: 10vh;
+    width: 100%;
+    border-top: 5px dotted black;
+    border-bottom:5px dotted black;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    /* padding: 0.2vw; */
+}
+
+#strip h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4vw;
+    /* overflow-x: auto;
+    overflow-y: hidden; */
+    /* background-color: red; */
+    display: inline-block;
+    font-weight: 900;
+    -webkit-text-stroke: 2px black;
+    color: rgb(219, 141, 141);
+    letter-spacing:1.5px;
+    margin-right: 12px;
+    animation-name: scr;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scr {
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(-100%);
+    }
+}
+
+#footer{
+    height: 60vh;
 }
