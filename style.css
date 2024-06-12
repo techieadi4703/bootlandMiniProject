@@ -343,6 +343,7 @@ html,body{
 #info h6{
     /* animation: zoom 2s linear; */
     /* color: #ffdada(255, 106, 106); */
+    text-align: center;
     margin-right: 130px;
     color: rgb(0, 0, 0);
     font-size: 1.7vw;
