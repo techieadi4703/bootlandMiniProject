@@ -249,9 +249,9 @@ html,body{
 }
 
 #alphabet h5:hover{
-    font-size: 2vw;
-    padding: 10px;
-    padding-left: 1.8px;
+    /* font-size: 2vw; */
+    /* padding: 10px; */
+    /* padding-left: 2.5px; */
     text-transform: uppercase;
     border: 3px solid black;
     /* border-radius: 50%; */
@@ -266,4 +266,114 @@ html,body{
 #vaguge{
     height: 100px;
     width: 100%;
+}
+
+#page3{
+    /* background-color: #ffdada; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+    text-transform: uppercase;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+    font-size: 1.5vw;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.358); */
+}
+
+#info{
+    margin-top: 0.5vh;
+    padding-bottom: 1vh;
+    height: 15vh;
+    width: 100%;
+    
+    background-color: #3a2c298b;
+    /* border-radius: 35%; */
+    /* border-top: 2px solid black; */
+    /* border-bottom:2px solid rgba(255, 106, 106, 0.581); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* transition: height 10s ease; */
+    /* transition: width 2s ease; */
+}
+
+#info:hover{
+    /* height: 30%; */
+    /* width: 100%; */
+    cursor: pointer;
+}
+
+/* @keyframes zoom {
+    from{
+        scale: 100%;
+        color: white;
+    }
+    to{
+        scale: 105%;
+        color: black;
+    }
+} */
+
+
+
+#info img{
+    background-color: aqua;
+    margin-top: 1vh;
+    opacity: 0.15;
+    height: 100%;
+    width: 10%;
+    /* position: absolute; */
+    /* left: 15%; */
+    object-fit: fill;
+    border-radius: 50%;
+    border: 1.5px solid white;
+    transition: all ease 0.8s;
+}
+
+#info img:hover{
+    opacity: 1;
+    /* left:40%;x */
+}
+
+
+#info h6{
+    /* animation: zoom 2s linear; */
+    /* color: #ffdada(255, 106, 106); */
+    margin-right: 130px;
+    color: rgb(255, 255, 255);
+    font-size: 1.7vw;
+    font-weight: 500;
+    padding-left: 5vw;
+}
+
+#info h6:hover{
+    color: black;
+    font-size: 2.5vw;
+    font-weight: 900;
+    /* scale: 110%; */
+
+}
+
+#info h1{
+    /* color: #ffdada(255, 106, 106); */
+    margin-right: 130px;
+    color: rgb(255, 238, 238);
+    font-size: 1.7vw;
+    font-weight: 500;
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    from{
+        color: rgb(166, 255, 0);
+    }   
+    to{
+        color: rgb(255, 255, 0);
+    } 
+}
+
+#child{
+    object-fit:contain;
 }
