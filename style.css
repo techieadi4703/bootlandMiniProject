@@ -90,7 +90,7 @@ html,body{
 #content{
     height: 100%;
     width: 100%;
-    background-color: blue;
+    /* background-color: blue; */
     /* padding: 2vw; */
     position: relative;
 }
@@ -102,6 +102,16 @@ html,body{
     object-fit: cover;
 }
 
+#nav h2:hover{
+    color: white;
+    cursor: pointer;
+}
+
+#over2 h5:hover{
+    font-size: 2vw;
+    color: yellow;
+    cursor: pointer;
+}
 #overlay{
     height:55%;
     width: 100%;
@@ -113,20 +123,27 @@ html,body{
     /* mix-blend-mode:difference; */
 }
 #over1{
+    font-size: 2vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 #over1 h2{
-    padding-left: 4.5px;
+    /* padding-left: 4.5px;
     padding-top: 2.8px;
-    width: 29px;
-    height: 29px;
+    width: 2.5vw;
+    height: 4vh; */
     border: 1px solid rgb(255, 255, 255);
-    border-right: 3px solid rgb(255, 255, 255);
+    border-right: 4px solid rgb(255, 255, 255);
     border-radius: 50%;
+    animation: spin 2s linear  infinite;
 }
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
 
 #over2{
     padding: 1.5vw 0;
@@ -138,7 +155,7 @@ html,body{
 
 #over2 h5{
     /* top: 0 ; */
-    font-size: 0.5vw;
+    font-size: 1.5vw;
     font-weight: 500;
 }
 
@@ -156,36 +173,40 @@ html,body{
 } */
 
 #scroll{
-    margin-top:50px ;
-    height: 100%;
-    width: 110%;
-    display: inline-block;
-    padding: 2vw;
-
+    /* margin-top:50px ; */
+    height: 22vh;
+    width: 100%;
+    /* display: inline-block; */
+    padding: 1vh;
+    margin-top: 1.6vh;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    /* display: inline-block; */
+    /* border-radius: 50%; */
 }
 #cont{
-    display: flex;
+    display: inline-block;
     /* align-items:start; */
-    justify-content: center;
-    overflow-x: auto;
-    white-space: nowrap;
-    overflow-y: hidden;
-    background-color: aqua;
-    height: 75%;
-    width: 100%;
-    object-fit:fill;
-    
+    /* justify-content: center; */
+    /* background-color: rgba(255, 197, 50); */
+    padding: 1.2vw;
+    height: 22vh;
+    /* padding: 1vw; */
+    width: 110px;
+    width: fit-content;    
+    animation: scrolling 8s linear infinite;
+    /* object-fit:fill; */
     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
 
-#imagess{
-    height: 15%;
+#scroll img{
+    height:80%;
     border-radius: 50%;
-    width: 100%;
+    width: 12.5%;
     margin: 1vw;
-    object-fit:fill;
+    object-fit:cover;
     object-position: top;
-    animation: scrolling 10s linear 1s infinite;
 }
 
 
@@ -196,4 +217,53 @@ html,body{
     to{
         transform: translateX(-100%);
     }
-  }
+}
+
+
+#alphabet{
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 1.3vw; */
+}
+
+#alphabet h5{
+    font-size: 1.7vw;
+    padding: 10px;
+    border-bottom: 3px solid black;
+    /* border-radius: 50%; */
+    cursor:pointer;
+}
+
+#alphabet h6{
+    padding: 0.6vw 0.8vw;
+    font-size: 1vw;
+    border: 3px solid rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    letter-spacing: 2px;
+    cursor:pointer;
+}
+
+#alphabet h5:hover{
+    font-size: 2vw;
+    padding: 10px;
+    padding-left: 1.8px;
+    text-transform: uppercase;
+    border: 3px solid black;
+    /* border-radius: 50%; */
+    cursor:pointer;
+}
+
+#alphabet h6:hover{
+    border: 2px solid rgba(0, 0, 0);
+}
+
+
+#vaguge{
+    height: 100px;
+    width: 100%;
+}
